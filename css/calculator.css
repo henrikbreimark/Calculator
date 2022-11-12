@@ -1,0 +1,21 @@
+#calculator-wrapper {
+    background-color: aqua;
+    width: 800px;
+    padding: 20px;
+}
+
+#input-wrapper {
+    background-color: blue;
+    height: 80px;
+}
+
+#button-wrapper {
+    background-color: blueviolet;
+    height: 300px;
+}
+
+#number-input {
+    height: 40px;
+    width: 500px;
+}
+
