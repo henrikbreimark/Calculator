@@ -3,9 +3,10 @@ html {
 }
 
 #calculator-wrapper {
-    background-color: aqua;
+    background-color: rgb(72, 72, 72);
     width: 300px;
-    padding: 20px;
+    padding: 10px;
+    border-radius: 3px;
 }
 
 #input-wrapper {
@@ -13,14 +14,117 @@ html {
     height: 80px;
 }
 
-#button-wrapper {
-    background-color: blueviolet;
-    height: 300px;
-}
+
 
 #number-input {
     height: 40px;
     width: 200px;
     font-size: 2rem;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    background-color: aliceblue;
+    text-align: right;
+}
+
+#button-wrapper {
+    background-color: blueviolet;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    align-content: space-around;
+    grid-template-areas: 
+    "clear clear . ."
+    "one two three mul"
+    "four five six div"
+    "seven eight nine add"
+    "zero comma equal sub";
+}
+
+.button {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(120, 120, 120);
+    justify-self: center;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    display: block;
+}
+
+.button:active {
+    background-color: rgb(  109, 109, 109);
+    font-size: 2.1rem;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.comma {
+    grid-area: comma;
+}
+
+.equal {
+    grid-area: equal;
+}
+
+.mul{
+    grid-area: mul;
+}
+
+.div {
+    grid-area: div;
+}
+
+.add {
+    grid-area: add;
+}
+
+.sub{
+    grid-area: sub;
+}
+
+.clear {
+    grid-area: clear;
+    width: 120px;
 }
 
